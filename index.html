@@ -1,0 +1,93 @@
+ 
+<html>
+    <head>
+      <title>Hand Gestures recognizer</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+             <!-- google fonts links -->
+
+             <link rel="preconnect" href="https://fonts.googleapis.com">
+             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+             <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Patrick+Hand&display=swap" rel="stylesheet">
+             
+                     <link rel="preconnect" href="https://fonts.googleapis.com">
+             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+             <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+             
+             <link rel="preconnect" href="https://fonts.googleapis.com">
+             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+             <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+             
+             <!-- Cookie font(nts) -->
+             <link rel="preconnect" href="https://fonts.googleapis.com">
+             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+             <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+             
+             <!-- great vibes(nts) -->
+             <link rel="preconnect" href="https://fonts.googleapis.com">
+             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+             <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    </head>
+  
+    <body>
+    <div class="container">
+    
+      <center>
+  <h3 class="btn btn-warning heading">
+   Hand Gestures Recognizer
+    <br>
+    <span>&#9995;</span></b>
+      <span>&#128077;</span></b>
+     <span>&#129304;</span></b>
+  </h3>
+        <br><br>
+  
+        <p style="font-size: 22px;">Take your selfie to generate the emoji, make sure your face is not been seen only your hand
+                        <br>
+                        <h2>You can make the following hand gestures - </h2>
+        <span>&#9995;</span></b>
+          |
+            <span>&#128077;</span></b>
+ |
+           <span>&#129304;</span></b>
+          <br>
+        </p>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Webcam View - </label>
+  <div id="camera"></div>
+          <br><br>
+  <button class="btn btn-warning" onclick="take_snapshot();">Capture image</button>
+        </div>
+  
+       
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Prediction- </label>
+            <p class="object_name" id="result_object_name"></p>
+            <p class="gesture_icon" id="result_object_gesture_icon"></p>
+  
+                      </div>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Snapshot - </label>
+  <div id="result"></div>
+          <br><br>
+  <button onclick="check();" class="btn btn-success">Predict Hand Gesture</button>
+        </div>
+  
+      </center>
+  
+    </div>
+  
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
+  
+   
