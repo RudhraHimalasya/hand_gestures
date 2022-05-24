@@ -21,6 +21,7 @@ function take_snapshot()
   console.log('ml5 version:', ml5.version);
   
 classifier = ml5.imageClassifier('',modelLoaded);
+classifier = ml5.imageClassifier('https://storage.googleapis.com/tm-model/ZjXDxCgfB/model.json', modelLoaded);
 
   function modelLoaded() {
     console.log('Model Loaded!');
@@ -53,7 +54,7 @@ toSpeak = "";
       
       if(gesture == "amazing") 
       { toSpeak = "This is looking amazing"; 
-      document.getElementById("result_object_gesture_icon").innerHTML = "&#128076;"; } 
+      document.getElementById("result_object_gesture_icon").innerHTML = "&#9995;"; } 
 
       else if(gesture == "best") 
       { toSpeak = "All the best"; 
